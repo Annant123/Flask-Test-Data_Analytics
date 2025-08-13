@@ -47,4 +47,5 @@ def pie_chart():
     return render_template('piechart.html', pie_chart = url_for('static', filename = "chart.png"))
 
 if __name__ == "__main__":
-    clas.run(port=3000)
+
+    clas.run(port=3000, host = "0.0.0.0", debug = False)
