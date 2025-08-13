@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Next Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe0b2, #ffcc80);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #4e342e;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #6d4c41;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: #3e2723;
+      transform: translateY(-2px);
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Next Page</h1>
+  <div class="button-container">
+    <a href="/" class="btn">← Back</a>
+    <a href="/bar" class="btn">Bar Graph</a>
+    <a href="/pie" class="btn">Pie Chart</a>
+    {{ table | safe}}
+</div>
+</body>
+</html>
